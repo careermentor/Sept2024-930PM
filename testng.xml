@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<listeners>
+<listener class-name="org.uncommons.reportng.HTMLReporter"></listener>
+<listener class-name="org.uncommons.reportng.JUnitXMLReporter"></listener>
+</listeners>
+
+
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="demoTestNG.FirstScenario"/>
+      <class name="demoTestNG.FirstScenario4"/>
+      <class name="demoTestNG.FirstScenario5"/>
+      
+      <class name="basicPkg.FirstScenario2"/>
+      <class name="demoTestNG.FirstScenario2"/>
+      
+      <class name="org.xyz.automation.fb.HandleKeyboardMouseWindows"/>
+      <class name="demoTestNG.FirstScenario3"/>
+      <class name="demoTestNG.FirstScenario8"/>
+      <class name="demoTestNG.FirstScenario9"/>
+      <class name="demoTestNG.FirstScenario6"/>
+     
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
